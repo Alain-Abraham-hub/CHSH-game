@@ -9,7 +9,6 @@ An interactive web-based game demonstrating quantum advantage through the CHSH (
 
 - **⚛️ Quantum Strategy**: Uses Bell pair entanglement to achieve ~85% win rate
 - **🎲 Classical Strategy**: Best classical approach limited to 75% wins
-- **🎨 Cyberpunk UI**: Beautiful game-themed interface with animated backgrounds
 - **📊 Real-time Stats**: Live visualization of win rates and performance
 - **📈 Comparison Dashboard**: Side-by-side quantum vs classical results
 - **🎯 Interactive Controls**: Adjust simulation parameters on the fly
@@ -108,7 +107,6 @@ CHSH-game/
 
 - **Animated starfield background** for space/quantum theme
 - **Real-time statistics** with progress bars
-- **Glowing neon effects** inspired by cyberpunk aesthetics
 - **Responsive design** works on desktop and mobile
 - **Interactive modal** explaining game rules
 - **Live log system** tracking all simulation events
