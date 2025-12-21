@@ -62,9 +62,8 @@ python app.py
 
 1. **Open your browser** to `http://localhost:5000`
 2. **Choose a mode**: Quantum (⚛️) or Classical (🎲)
-3. **Set rounds**: Enter number of simulation rounds (100-100,000)
-4. **Start simulation**: Watch the quantum advantage in action!
-5. **Compare results**: Run both modes to see the difference
+3. **Start simulation**: Watch the quantum advantage in action!
+4. **Compare results**: Run both modes to see the difference
 
 ## 📁 Project Structure
 
