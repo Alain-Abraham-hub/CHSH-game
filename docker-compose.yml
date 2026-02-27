@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  chsh-game:
+    build: .
+    container_name: chsh-game
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=production
+      - FLASK_APP=app.py
+      - PORT=5001
+    volumes:
+      # Optional: Uncomment for development to see changes without rebuilding
+      # - ./backend:/app/backend
+      # - ./app.py:/app/app.py
+    restart: unless-stopped

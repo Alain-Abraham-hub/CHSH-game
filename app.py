@@ -188,7 +188,11 @@ def health():
     return jsonify({'status': 'ok', 'message': 'CHSH Game API is running'})
 
 if __name__ == '__main__':
+    import os
+    debug_mode = os.getenv('FLASK_ENV') == 'development'
+    port = int(os.getenv('PORT', 5001))
+    
     print("🎮 Starting CHSH Quantum Game Server...")
-    print("🌐 Open http://localhost:5001 in your browser")
+    print(f"🌐 Open http://localhost:{port} in your browser")
     print("⚛️  Quantum vs Classical - Let the battle begin!")
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    app.run(debug=debug_mode, host='0.0.0.0', port=port)
