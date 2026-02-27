@@ -10,7 +10,8 @@ COPY frontend/package*.json ./
 RUN npm install
 
 COPY frontend/src ./src
-COPY frontend/public ./public 2>/dev/null || true
+# Optional `public/` folder (not present in this project). Skip copying it to avoid build errors.
+# If you add a `frontend/public` folder later, add a `COPY frontend/public ./public` line here.
 COPY frontend/index.html ./
 COPY frontend/vite.config.js ./
 COPY frontend/postcss.config.js ./
